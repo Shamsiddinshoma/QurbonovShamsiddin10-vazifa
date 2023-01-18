@@ -1,0 +1,103 @@
+.tradition{
+    color: white;
+    background-color: #84A178;
+    width: 100%;
+    height: 1200px;
+    &_text{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        height: 20%;
+        h3{
+            font-weight: 750;
+        }
+        h2{
+            font-size: 45px;
+            font-weight: 650;
+        }
+    }
+    &_info{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        &_cow{
+            margin-left: 50px;
+            width: 50%;
+            height: 100%;
+        }
+        &_text{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                font-size: 23px;
+            }
+            .btn3{
+                width: 165px;
+                height: 42px;
+                border-radius: 10px;
+                background-color: #F8D24E;
+                color: black;
+                font-weight: 700;
+                border: none;
+            }
+        }
+    }
+    &_massa{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 30%;
+        &_box{
+            text-align: center;
+            width: 370px;
+            height: 230px;
+        }
+    }
+}
+
+@media only screen and (max-width:640px){
+    .tradition{
+        height: 2200px;
+        width: 100%;
+        &_text{
+            width: 100%;
+            h2{
+                font-size: 38px;
+            }
+        }
+        &_info{
+            text-align: center;
+            flex-direction: column;
+            width: 100%;
+            &_cow{
+                width: 100%;
+                img{
+                    width: 100%;
+                    margin-left: -80px;
+                }
+            }
+            &_text{
+                .btn3{
+                    margin: 0 auto;
+                }
+            }
+
+            &_text{
+                width: 100%;
+            }
+        }
+        &_massa{
+            flex-direction: column;
+            width: 100%;
+            &_box{
+                width: 100%;
+            }
+        }
+    }
+}

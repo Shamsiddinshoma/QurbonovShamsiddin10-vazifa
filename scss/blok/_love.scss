@@ -1,0 +1,73 @@
+.love{
+    background-image: url(../../images/Мороженое\ фон\ \(1\).png);
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    &_position{
+        margin-left: 150px;
+        margin-top: -70px;
+        position: absolute;
+        width: 1000px;
+        height: 430px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_info{
+        text-align: center;
+        margin-left: 150px;
+        position: absolute;
+        width: 1000px;
+        height: 430px;
+        margin-top: 500px;
+        img{
+            margin-bottom: 40px;
+        }
+        p{
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            margin: 0 auto;
+            width: 800px;
+            height: 130px;
+        }
+        .dostimg{
+            margin-top: 40px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:640px){
+    .love{
+        &_position{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            img{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+        &_info{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            img{
+                margin-top: 450px;
+                padding: 0;
+                width: 90%;
+            }
+            p{
+                width: 90%;
+            }
+            .dostimg{
+                display: none;
+            }
+        }
+    }
+}
